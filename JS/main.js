@@ -21,7 +21,7 @@ function Operacion(tipo, datos, resultado) {
     this.resultado = resultado;
 }
 
-// Evento para seleccionar la operación
+//  Seleccionar la operación
 btnSeleccionar.addEventListener("click", () => {
     const operacion = operacionSelect.value;
 
@@ -42,7 +42,7 @@ btnSeleccionar.addEventListener("click", () => {
     }
 });
 
-// Evento para calcular la operación
+//  Calcular 
 btnCalcular.addEventListener("click", () => {
     const operacion = operacionSelect.value;
     let resultado;
