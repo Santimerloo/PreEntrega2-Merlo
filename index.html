@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Online</title>
+    <link rel="stylesheet" type="text/css" href="./CSS/style.css" />
+</head>
+
+<body>
+    <h1> CALCULADORA</h1>
+    <p>Elige una operación y llena los datos requeridos.</p>
+
+    <div id="menu">
+        <select id="operacion">
+            <option value="">Selecciona una operación</option>
+            <option value="Sumar">Sumar</option>
+            <option value="Restar">Restar</option>
+            <option value="Multiplicar">Multiplicar</option>
+            <option value="IMC">Calcular IMC</option>
+        </select>
+        <button id="btnSeleccionar">Seleccionar</button>
+    </div>
+
+    <div id="formulario" style="display: none;">
+        <div id="inputsNumeros">
+            <input type="number" id="num1" placeholder="Ingresa el primer número">
+            <input type="number" id="num2" placeholder="Ingresa el segundo número">
+        </div>
+        <div id="inputsIMC" style="display: none;">
+            <input type="number" id="peso" placeholder="Ingresa tu peso (kg)">
+            <input type="number" id="altura" placeholder="Ingresa tu altura (m)">
+        </div>
+        <button id="btnCalcular">Calcular</button>
+    </div>
+
+    <div id="resultado" style="display: none;">
+        <h2>Resultado:</h2>
+        <p id="resultadoTexto"></p>
+        <button id="btnHistorial">Ver Historial</button>
+    </div>
+
+    <div id="historial" style="display: none;">
+        <h2>Historial de Operaciones:</h2>
+        <ul id="listaHistorial"></ul>
+    </div>
+
+    <script src="./JS/main.js"></script>
+</body>
+
+</html>
