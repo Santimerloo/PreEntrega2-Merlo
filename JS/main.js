@@ -51,7 +51,7 @@ btnCalcular.addEventListener("click", () => {
         const peso = parseFloat(document.getElementById("peso").value);
         const altura = parseFloat(document.getElementById("altura").value);
 
-        if (isNaN(peso) ||  peso <= 0 || altura <= 0) {
+        if (isNaN(peso) ||  peso >= 0 || altura >= 0) {
             alert("Por favor, ingresa valores válidos para peso y altura.");
             return;
         }
